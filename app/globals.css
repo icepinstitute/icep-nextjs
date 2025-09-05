@@ -1,0 +1,131 @@
+@import "tailwindcss";
+@import 'swiper/css';
+@import 'swiper/css/autoplay';
+@import 'swiper/css/pagination';
+@import 'swiper/css/effect-fade';
+
+/* Prevent horizontal scroll when mobile menu is closed */
+body {
+  overflow-x: hidden;
+}
+
+@theme {
+  /* Brand Red */
+  --color-brand-red-50: #fdeaeb;
+  --color-brand-red-100: #fbd5d7;
+  --color-brand-red-200: #f6abaf;
+  --color-brand-red-300: #f08286;
+  --color-brand-red-400: #c34e53;
+  --color-brand-red: #9b1e24;
+  --color-brand-red-600: #851a1f;
+  --color-brand-red-700: #70161b;
+  --color-brand-red-800: #5a1216;
+  --color-brand-red-900: #450e11;
+  --color-brand-red-1000: #300a0c;
+
+  /* Brand Yellow */
+  --color-brand-yellow-50: #fffce0;
+  --color-brand-yellow-100: #fff9c2;
+  --color-brand-yellow-200: #fff7a3;
+  --color-brand-yellow-300: #fff485;
+  --color-brand-yellow-400: #ffeb43;
+  --color-brand-yellow: #ffe401;
+  --color-brand-yellow-600: #d6bf01;
+  --color-brand-yellow-700: #ae9a01;
+  --color-brand-yellow-800: #867601;
+  --color-brand-yellow-900: #5e5101;
+  --color-brand-yellow-1000: #362d00;
+
+  /* Brand White */
+  --color-brand-white: #f5f2ed;
+
+  /* Brand Blue */
+  --color-brand-blue-50: #e6e7ed;
+  --color-brand-blue-100: #cdcfdb;
+  --color-brand-blue-200: #9b9fb7;
+  --color-brand-blue-300: #696f93;
+  --color-brand-blue-400: #383f6f;
+  --color-brand-blue: #0c1438;
+  --color-brand-blue-600: #0a1130;
+  --color-brand-blue-700: #080e28;
+  --color-brand-blue-800: #060b20;
+  --color-brand-blue-900: #050818;
+  --color-brand-blue-1000: #030510;
+
+
+  --color-brand-dark: #001220;
+
+  /* fonts */
+  --font-heading: 'Lora', serif;
+}
+
+/* utilities */
+
+@utility eduma-header-bg {
+  background-color: #2a4856;
+}
+
+@utility footer-bg {
+  @apply absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-no-repeat bg-cover bg-bottom z-[-1];
+  background-image: url('/images/footer/footer-bg-2.svg');
+}
+
+@utility cepi-menu-bg-yellow {
+  background-color: #ffc02b;
+}
+
+@utility header-gradient {
+  /* background: #2A4856;
+  background: linear-gradient(90deg, rgba(42, 72, 86, 1) 0%, rgba(33, 57, 66, 1) 35%); */
+  background: #0C1438;
+  background: linear-gradient(90deg, rgba(12, 20, 56, 1) 0%, rgba(7, 14, 36, 1) 100%);
+}
+
+@utility about-gradient {
+  background: #1b4152;
+  background: linear-gradient(123deg, rgba(27, 65, 82, 1) 0%, rgba(12, 20, 56, 1) 50%);
+}
+
+@utility btn {
+  @apply cursor-pointer w-fit flex items-center justify-center font-semibold rounded-lg transition-colors px-6 py-3;
+}
+
+@utility heading-font {
+  @apply font-heading;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Custom Swiper Pagination Styles */
+.results-swiper .swiper-pagination {
+  position: relative !important;
+  margin-top: 2rem;
+}
+
+.results-swiper .swiper-pagination-bullet {
+  background: #cdcfdb !important;
+  opacity: 1 !important;
+}
+
+.results-swiper .swiper-pagination-bullet-active {
+  background: #0c1438 !important;
+}
+
+/* Floating Whatsapp */
+.styles-module_floatingWhatsapp__yWF5K.floating-whatsapp header.styles-module_chatHeader__gaeOA {
+  display: flex;
+}
+.styles-module_floatingWhatsapp__yWF5K.floating-whatsapp header.styles-module_chatHeader__gaeOA > div.styles-module_close__RLouK {
+  top: 0.25rem;
+  right: 0.25rem;
+  position: absolute;
+}
